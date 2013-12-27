@@ -123,6 +123,25 @@ nets = dict(
         VERSION_WARNING=lambda v: 'Upgrade Terracoin to >= 0.8.0.1!' if v < 80001 else None,
     ),
 
+	netcoin=math.Object(
+        PARENT=networks.nets['netcoin'],
+        SHARE_PERIOD=15, # seconds
+        CHAIN_LENGTH=24*60*60//10, # shares
+        REAL_CHAIN_LENGTH=24*60*60//10, # shares
+        TARGET_LOOKBEHIND=200, # shares
+        SPREAD=30, # blocks
+        IDENTIFIER='eaaed5b8c6923410'.decode('hex'),
+        PREFIX='720eacae3ef629b0'.decode('hex'),
+        P2P_PORT=11315,
+        MIN_TARGET=0,
+        MAX_TARGET=2**256//2**20 - 1,
+        PERSIST=True,
+        WORKER_PORT=11314,
+        BOOTSTRAP_ADDRS=''.split(' '),
+        ANNOUNCE_CHANNEL='#p2pool-ltc',
+        VERSION_CHECK=lambda v: True,
+    ),
+
 )
 for net_name, net in nets.iteritems():
     net.NAME = net_name
