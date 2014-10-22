@@ -39,11 +39,11 @@ Donations towards further development:
 -------------------------
     1HNeqi3pJRNvXybNX4FKzZgYJsdTSqJTbk
 
-Official wiki :
+Official wiki:
 -------------------------
 https://en.bitcoin.it/wiki/P2Pool
 
-Alternate web front end :
+Alternate web frontend:
 -------------------------
 * https://github.com/hardcpp/P2PoolExtendedFrontEnd
 
@@ -94,4 +94,10 @@ Sponsors:
 Thanks to:
 * The Bitcoin Foundation for its generous support of P2Pool
 * The Litecoin Project for its generous donations to P2Pool
+ 
+License:
+-------------------------
+
+[Available here](COPYING)
+
 
